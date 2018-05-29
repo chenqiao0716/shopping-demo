@@ -1,0 +1,50 @@
+<view class="user-page">
+  <view class="card-wrap">
+    <view class="user-card">
+      <view class="userinfo-item">
+        <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+      </view>
+      <view class="userinfo userinfo-item">
+        <view class="user-item"><text>{{ name }}</text></view>
+        <view class="user-item"><text>用户名：</text><text>{{ userInfo.nickName }}</text></view>
+        <view class="user-item">
+          <span>VIP：{{ vipLevel }}</span>
+          <span>积分：{{ score }}</span>
+        </view>
+      </view>
+      <view class="user-account userinfo-item">
+        账号管理
+      </view>
+  </view>
+  </view>
+  <view class="card-wrap">
+      <view class="image-icon-warp">
+        <image class="image-icon" src="../../assets/waiting_pay.png" background-size="cover"></image>
+        <text>待付款</text>
+      </view>
+    <view class="image-icon-warp">
+      <image class="image-icon" src="../../assets/waiting_receive.png" background-size="cover"></image>
+      <text>待收货</text>
+    </view>
+    <view class="image-icon-warp">
+      <image class="image-icon" src="../../assets/waiting_commit.png" background-size="cover"></image>
+      <text>待评价</text>
+    </view>
+    <view class="image-icon-warp">
+      <image class="image-icon" src="../../assets/after_sale.png" background-size="cover"></image>
+      <text>退还/售后</text>
+    </view>
+    <view class="image-icon-warp">
+      <image class="image-icon" src="../../assets/all_orders.png" background-size="cover"></image>
+      <text>全部订单</text>
+    </view>
+  </view>
+  <view>123sgsgs ddddd1231</view>
+  <view style="height: 200rpx;margin-top: 10rpx;background: #ffffff;" wx:for="{{bookList}}">
+    <view>{{item.title}}</view>
+    <view style="font-size: 24rpx;margin-top: 20rpx;">
+      <text style="display: block;">作者：{{item.author}}</text>
+      <text style="display: block; margin-top: 10rpx;xnx x">描述{{item.description}}</text>
+    </view>
+  </view>
+</view>
